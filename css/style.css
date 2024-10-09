@@ -1,39 +1,168 @@
-/****** General ***********/
 * {
     font-family: 'Raleway', sans-serif;
-}
-
-:root {
+ }
+ :root {
     --main-color: #0065FC;
     --main-bg-color: #F2F2F2;
     --filter-bg-color: #DEEBFF;
 }
-
-.fa-solid {
-    color: var(--main-color);
+ body {
+    margin-left: 50px;
+    margin-right: 50px;
 }
-
-body {
-    display: flex;
-    justify-content: center;
+header {
+    height: 79px;
+    margin-bottom: 30px;
 }
-
-.main-container {
-    width: 100%;
-    max-width: 1440px;
-    padding: 0 50px;
-    box-sizing: border-box;
-}
-
 a {
     color: inherit;
     text-decoration: none;
 }
-
+.lien-nav:hover {
+    color: var(--main-color);
+    border-top: 2px solid var(--main-color);
+}
+#Logo {
+    width: 61.09px;
+    height: 19px;
+}
+.position-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+.position-nav {
+    list-style: none;
+    display: flex;
+    gap: 68px;
+}
+.form-global {
+    width: 377px;
+    height: 49px;
+    margin-bottom: 35px;
+    margin-top: 35px;
+}
+form {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+input[type="text"] {
+    width: 195px;
+    border: 1px solid var(--main-bg-color);
+}
+input[type="submit"] {
+    width: 132px;
+    background-color: var(--main-color);
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 0 15px 15px 0;
+}
+label {
+    background-color: var(--main-bg-color);
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px 0 0 15px;
+}
+input::placeholder {
+    font-weight: bold;
+    text-align: center;
+}
+.filters {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+.filters-position {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+.filters-style{
+    border: 2px solid var(--main-bg-color);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.filters-style:hover {
+    background-color: var(--filter-bg-color);
+}
+.filters-style i {
+    padding-right: 10px;
+    color: var(--main-color);
+}
+.filters-info {
+    display: flex;
+    align-items: center;
+}
+.filters-info i {
+    background-color: var(--main-color);
+    color: white;
+    border: 1px solid var(--main-bg-color);
+    border-radius: 50%;
+    font-size: 24px;
+    margin-right: 10px;
+}
+/*
+modifié par l'ajout de section-title
+h2 {
+    padding: 30px;
+}
+/* modifié par l'ajout du css test fourni
+.hebergements {
+    border: 1px solid var(--main-bg-color);
+    background-color: var(--main-bg-color);
+    border-radius: 20px;
+    margin-top: 35px;
+}*/
 .section-title {
-    margin: 0;
     font-size: 22px;
 }
+.hebergements .section-title {
+    padding-bottom: 50px;
+}
+.grid-hebergements {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 30px;
+}
+.grid-item-hebergements {
+    border: 1px solid none;
+    background-color: white;
+    border-radius: 20px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+}
+.grid-item-hebergements img {
+    height: 124px;
+    width: 95%;
+    border-radius: 15px 15px 0 0;
+    object-fit: cover;
+    padding: 5px;
+}
+.grid-item-hebergements .grid-content {
+    padding-left: 15px;
+    line-height: 0.4;
+}
+.grid-hebergements .card-rating {
+    color: var(--main-color);
+    padding-bottom: 15px;
+}  
+.bottom-hebergements {
+    font-weight: bold;
+    padding-top: 30px;
+}
+/* ajout de css test fourni en annexe pour populaires */
 
 .card {
     background-color: white;
@@ -119,49 +248,49 @@ a {
 
 .populaires-cards .card-rating {
     margin-bottom: 5px;
+    color: var(--main-color);
 }
 
+/* fin du css fourni */
 
-
-
-/* Le code ci-dessous correspond à la version responsive uniquement */
-
-/****** Media queries ***********/
-/* Medium devices (tablets, less/equal than 1024px) */
-@media (max-width: 1024px) {
-    .hebergements-and-populaires {
-        flex-direction: column;
-    }
-
-    .hebergements {
-        width: 100%;
-    }
-
-    .populaires {
-        width: 100%;
-        margin-top: 50px;
-    }
-
-    .populaires-cards {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    .populaires-cards a {
-        width: 30%;
-    }
-
-    .populaires-cards .card-title {
-        font-size: 14px;
-    }
-
-    .populaires-cards .card-subtitle {
-        font-size: 13px;
-    }
+.populaires-title i {
+    color: var(--main-color);
 }
-
-/* Small devices (phones, less than 768px) */
-@media (max-width: 767.98px) {
-    /* ... */
+.activites-marseille .section-title {
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+.activites-marseille {
+    margin-left: 30px;
+}
+.card-marseille {
+    border: 1px solid none;
+    border-radius: 20px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    background-color: white;
+}
+.card-marseille img {
+    height: 380px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
+.card-marseille .card-title {
+    padding-left: 19px;
+    padding-bottom: 20px;
+}
+.global-card-marseille {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    gap: 30px;
+}
+footer {
+    border: 1px solid none;
+    background-color: var(--main-bg-color);
+    display: flex;
+    justify-content: space-between;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 35px;
 }
