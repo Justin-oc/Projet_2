@@ -7,8 +7,24 @@
     --filter-bg-color: #DEEBFF;
 }
  body {
-    margin-left: 50px;
-    margin-right: 50px;
+/*retrait des margins et paddings du navigateur*/
+   margin: 0;
+   padding: 0;
+}
+.main-container {
+    /*
+  Centrage du contenu de la page
+   */
+  width: 100%;
+  max-width: 1440px;
+  margin-inline: auto;
+  padding: 0 50px;
+  box-sizing: border-box;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
 }
 header {
     height: 79px;
