@@ -26,10 +26,14 @@ main {
     flex-direction: column;
     gap: 35px;
 }
-header {
-    height: 79px;
+
+header {    
     margin-bottom: 30px;
+    height: 79px;
 }
+
+
+
 a {
     color: inherit;
     text-decoration: none;
