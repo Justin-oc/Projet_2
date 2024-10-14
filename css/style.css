@@ -173,16 +173,22 @@ h2 {
     flex-direction: column;
     gap: 4px;
 }
+.grid-item-hebergements .grid-content {
+    padding-left: 15px;
+    line-height: 0.4;
+}
+.grid-item-hebergements .card-title {
+    margin: 0;
+  }
+.grid-item-hebergements .card-subtitle {
+    margin: 0;
+  }
 .grid-item-hebergements img {
     height: 124px;
     width: 95%;
     border-radius: 15px 15px 0 0;
     object-fit: cover;
     padding: 5px;
-}
-.grid-item-hebergements .grid-content {
-    padding-left: 15px;
-    line-height: 0.4;
 }
 .grid-hebergements .card-rating {
     color: var(--main-color);
