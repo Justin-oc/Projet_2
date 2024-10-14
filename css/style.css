@@ -174,8 +174,12 @@ h2 {
     gap: 4px;
 }
 .grid-item-hebergements .grid-content {
-    padding-left: 15px;
-    line-height: 0.4;
+    flex: 1;
+    padding: 0 15px 15px 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    justify-content: space-between;
 }
 .grid-item-hebergements .card-title {
     margin: 0;
