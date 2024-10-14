@@ -276,11 +276,11 @@ h2 {
 .populaires-title i {
     color: var(--main-color);
 }
-.activites-marseille .section-title {
+.activites .section-title {
     padding-top: 30px;
     padding-bottom: 10px;
 }
-.activites-marseille {
+.activites {
     margin-left: 30px;
 }
 .card-marseille {
