@@ -152,6 +152,11 @@ h2 {
     font-size: 22px;
     margin: 0;
 }
+.hebergements {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
 .hebergements .section-title {
     padding-bottom: 50px;
 }
