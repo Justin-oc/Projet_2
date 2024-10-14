@@ -83,6 +83,7 @@ input[type="submit"] {
     font-weight: bold;
     border: none;
     border-radius: 0 15px 15px 0;
+    cursor: pointer;
 }
 label {
     background-color: var(--main-bg-color);
