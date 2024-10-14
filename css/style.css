@@ -7,7 +7,7 @@
     --filter-bg-color: #DEEBFF;
 }
  body {
-/*retrait des margins et paddings du navigateur*/
+/*retrait des marges et paddings du navigateur*/
    margin: 0;
    padding: 0;
 }
@@ -32,12 +32,11 @@ header {
     height: 79px;
 }
 
-
-
 a {
     color: inherit;
     text-decoration: none;
 }
+
 .lien-nav:hover {
     color: var(--main-color);
     border-top: 2px solid var(--main-color);
@@ -74,6 +73,8 @@ form {
 input[type="text"] {
     width: 195px;
     border: 1px solid var(--main-bg-color);
+    padding: 15px; 
+    outline: none;
 }
 input[type="submit"] {
     width: 132px;
@@ -145,6 +146,7 @@ h2 {
     border-radius: 20px;
     margin-top: 35px;
 }*/
+
 .section-title {
     font-size: 22px;
 }
