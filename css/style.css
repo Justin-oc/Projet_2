@@ -287,9 +287,6 @@ input::placeholder {
 .populaires-title i {
     color: var(--main-color);
 }
-.activites .section-title {
-   
-}
 .activites {
     margin: 0;
     display: flex;
