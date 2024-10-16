@@ -65,6 +65,9 @@ nav {
     display: flex;
     gap: 68px;
 }*/
+ul {
+    padding: 0;
+}
 nav ul {
     list-style: none;
     display: flex;
@@ -119,6 +122,7 @@ input::placeholder {
     list-style: none;
     display: flex;
     gap: 15px;
+    padding-left: 15px;
 }
 .filters-style{
     border: 2px solid var(--main-bg-color);
@@ -373,5 +377,12 @@ footer {
     .form-global {
         width: 335px;
     }
-    
+    .filters {
+        flex-direction: column;
+    }
+    .filters-position {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
 }
