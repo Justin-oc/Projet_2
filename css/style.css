@@ -321,3 +321,24 @@ footer {
     margin-right: 50px;
     padding: 20px;
 }
+/****** Media queries ***********/
+@media (max-width: 991.98px) {
+    .hebergements-and-populaires {
+        flex-direction: column;
+        gap: 50px;
+    }
+    .populaires {
+       width: 100%;
+    }
+    .hebergements {
+        width: 100%;
+    }
+    .populaires-cards {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        flex: 1;
+    }
+}
+@media (max-width: 575.98px) {
+}
