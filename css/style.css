@@ -401,4 +401,11 @@ footer {
         display: flex;
         flex-direction: column;
     }
+    .global-card-activites {
+        display: flex;
+        flex-direction: column;
+    }
+    .global-card-activites img {
+        object-fit: cover;
+    }
 }
