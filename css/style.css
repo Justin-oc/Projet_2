@@ -334,10 +334,10 @@ footer {
         width: 100%;
     }
     .populaires-cards {
-        display: flex;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
         gap: 20px;
-        flex: 1;
     }
 }
 @media (max-width: 575.98px) {
