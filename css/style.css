@@ -390,4 +390,15 @@ footer {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
     }
+    .hebergements-and-populaires {
+        flex-direction: column-reverse;
+    }
+    .grid-hebergements {
+        display: flex;
+        flex-direction: column;
+    }
+    .populaires-cards {
+        display: flex;
+        flex-direction: column;
+    }
 }
