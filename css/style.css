@@ -59,9 +59,17 @@ nav {
     display: flex;
     justify-content: space-between;
 }
+/* changement de l'appel de liste (ul) pour faciliter media queries
 .position-nav {
     list-style: none;
     display: flex;
+    gap: 68px;
+}*/
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: end;
+    width: 100%;
     gap: 68px;
 }
 .form-global {
@@ -341,4 +349,20 @@ footer {
     }
 }
 @media (max-width: 767px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    img#Logo {
+        padding: 30px;
+        width: 100%;
+        justify-content: space-around;
+    }
+    ul {
+        display: flex;
+        justify-content: space-around;
+        padding: 0;
+    }
 }
