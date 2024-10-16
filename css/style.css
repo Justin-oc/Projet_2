@@ -404,6 +404,7 @@ footer {
     .global-card-activites {
         display: flex;
         flex-direction: column;
+        gap: 15px;
     }
     .global-card-activites img {
         max-height: 200px;
