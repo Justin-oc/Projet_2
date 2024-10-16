@@ -65,7 +65,7 @@ nav {
     display: flex;
     gap: 68px;
 }*/
-ul {
+nav ul {
     list-style: none;
     display: flex;
     justify-content: end;
@@ -360,7 +360,7 @@ footer {
         width: 100%;
         justify-content: space-around;
     }
-    ul {
+    nav ul {
         display: flex;
         justify-content: space-around;
         padding: 0;
@@ -373,7 +373,5 @@ footer {
     .form-global {
         width: 335px;
     }
-    .filters {
-        flex-direction: column;
-    }
+    
 }
