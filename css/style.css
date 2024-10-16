@@ -373,4 +373,7 @@ footer {
     .form-global {
         width: 335px;
     }
+    .filters {
+        flex-direction: column;
+    }
 }
