@@ -370,4 +370,7 @@ footer {
         margin-left: 20px;
         margin-right: 20px;
     }
+    .form-global {
+        width: 335px;
+    }
 }
