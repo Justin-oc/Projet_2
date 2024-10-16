@@ -406,6 +406,6 @@ footer {
         flex-direction: column;
     }
     .global-card-activites img {
-        object-fit: cover;
+        max-height: 200px;
     }
 }
