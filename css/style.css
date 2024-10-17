@@ -405,6 +405,25 @@ footer {
     .form-global {
         width: 100%;
     }
+    input[type="text"] {
+        flex: 1;
+    }
+    input[type="text"]::placeholder {
+        text-align: left;
+    } 
+    #search-desktop {
+        display: none;
+    }
+    #search-mobile {
+        display: block;
+        margin-left: -10px;
+        background-color: var(--main-color);
+        color: #FFF;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+        border-radius: 15px;
+        border: none;
+        width: 49px;
+    }
     .filters-position {
         width: 100%;
         display: grid;
