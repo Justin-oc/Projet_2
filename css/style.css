@@ -403,19 +403,27 @@ footer {
         padding: 0 20px;
     }
     .form-global {
-        width: 335px;
+        width: 100%;
     }
     .filters-position {
+        width: 100%;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
     }
     .hebergements-and-populaires {
         flex-direction: column-reverse;
+        gap: 15px;
     }
     .grid-hebergements {
         display: flex;
         flex-direction: column;
+    }
+    .hebergements-and-populaires .populaires {
+        border-radius: 0;
+    }
+    .hebergements-and-populaires .hebergements {
+        background-color: #FFF;
     }
     .populaires-cards {
         display: flex;
