@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <div class="main-container"></div>
+    <div class="main-container">
         <header>
             <nav>
                 <div class="position-logo">
@@ -24,14 +24,14 @@
                 <ul>
                     <li>
                       <div class="lien-nav">
-                        <a href="#">
+                        <a href="#hebergements">
                           Hébergements
                         </a>
                       </div>
                     </li>
                     <li>
                       <div class="lien-nav">
-                        <a href="#">
+                        <a href="#activites">
                           Activités
                         </a>
                       </div>
@@ -40,14 +40,15 @@
             </nav>
         </header>
         <main>
-            <section>
+            <section class="info">
                 <h1 class="section-title">Trouver votre hébergement pour des vacances de rêve</h1>
                 <p>En plein centre ville ou en pleine nature</p>       
                 <div class="form-global">
                     <form method="get" action="">
                         <label for="localisation"><i class="fas fa-map-marker-alt"></i></label> 
                         <input type="text" name="localisation" placeholder="Marseille, France" id="localisation"> 
-                        <input type="submit" name="Rechercher" value="Rechercher">
+                        <input type="submit" name="Rechercher" value="Rechercher" id="search-desktop">
+                        <button type="submit" id="search-mobile"><i class="fas fa-heart"></i></button>
                     </form>
                 </div>
                     <div class="filters">
@@ -65,7 +66,7 @@
                 </div>
             </section>
             <div class="hebergements-and-populaires">
-                <section class="hebergements">
+                <section class="hebergements" id="hebergemnts">
                     <h2 class="section-title">Hébergements à Marseille</h2>
                         <div class="grid-hebergements">
                             <a href="#">
@@ -241,7 +242,7 @@
                     </div>
                 </section>
             </div>
-            <div class="activites">
+            <div class="activites" id="activites">
                 <h2 class="section-title">Activités à Marseille</h2>
                 <section class="global-card-activites">
                     <a href="#">
