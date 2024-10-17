@@ -113,6 +113,9 @@ label {
     align-items: center;
     border-radius: 15px 0 0 15px;
 }
+#search-mobile {
+    display: none;
+}
 input::placeholder {
     font-weight: bold;
     text-align: center;
@@ -322,6 +325,10 @@ input::placeholder {
     object-fit: cover;
     border-radius: 20px 20px 0 0;
 }
+.card-activites h3 {
+    margin: 0;
+    padding: 19px 20px;
+}
 .global-card-activites {
     display: flex;
     gap: 30px;
@@ -332,10 +339,10 @@ input::placeholder {
 footer {
     background-color: var(--main-bg-color);
     display: flex;
-    justify-content: space-between;
-    margin-left: 50px;
-    margin-right: 50px;
     padding: 20px;
+}
+.footer-flex {
+    flex: 1;
 }
 /****** Media queries ***********/
 @media (max-width: 1024px) {
@@ -363,15 +370,24 @@ footer {
         grid-template-rows: 1fr;
         gap: 20px;
     }
+    .card-activites img {
+        height: 200px;
+    }
 }
 @media (max-width: 767px) {
+    .main-container {
+        padding: 0;
+    }
+    header {
+        height: auto;
+    }
     nav {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
-    img#Logo {
+    .position-logo {
         padding: 30px;
         width: 100%;
         justify-content: space-around;
@@ -381,10 +397,10 @@ footer {
         justify-content: space-around;
         padding: 0;
         margin: 0;
+        gap: 0;
     }
-    main {
-        margin-left: 20px;
-        margin-right: 20px;
+    .info {
+        padding: 0 20px;
     }
     .form-global {
         width: 335px;
