@@ -40,9 +40,6 @@ a {
 .position-logo {
     padding: 30px 50px 30px 0;
 }
-nav ul {
-    margin: 0;
-}
 .lien-nav {
    padding-top: 14px;
 }
@@ -56,19 +53,10 @@ nav ul {
 }
 .position-logo {
     display: flex;
-    justify-content: center;
-    align-items: center;
 }
 nav {
     display: flex;
-    justify-content: space-between;
 }
-/* changement de l'appel de liste (ul) pour faciliter media queries
-.position-nav {
-    list-style: none;
-    display: flex;
-    gap: 68px;
-}*/
 ul {
     padding: 0;
 }
@@ -78,6 +66,7 @@ nav ul {
     justify-content: end;
     width: 100%;
     gap: 68px;
+    margin: 0;
 }
 .form-global {
     width: 377px;
@@ -397,7 +386,10 @@ footer {
         justify-content: space-around;
         padding: 0;
         margin: 0;
-        gap: 0;
+        gap: 0; 
+    }
+    .lien-nav:hover {
+        border-top: none;
     }
     .info {
         padding: 0 20px;
