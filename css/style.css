@@ -388,6 +388,15 @@ footer {
         margin: 0;
         gap: 0; 
     }
+    nav ul li {
+        flex: 1;
+        padding-bottom: 14px;
+        border-bottom: 2px solid var(--main-bg-color);
+        text-align: center;
+        &:hover {
+            border-bottom-color: var(--main-color);
+        }
+    }
     .lien-nav:hover {
         border-top: none;
     }
