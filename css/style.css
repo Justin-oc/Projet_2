@@ -187,9 +187,10 @@ input::placeholder {
 .grid-item-hebergements .card-subtitle {
     margin: 0;
   }
-.grid-item-hebergements img {
+  .grid-item-hebergements img {
+    box-sizing: border-box;
     height: 124px;
-    width: 95%;
+    width: 100%;
     border-radius: 15px 15px 0 0;
     object-fit: cover;
     padding: 5px;
@@ -378,7 +379,6 @@ footer {
     }
     .position-logo {
         padding: 30px;
-        width: 100%;
         justify-content: space-around;
     }
     nav ul {
